@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { education } from '@/lib/data';
-import { GraduationCap, Calendar, MapPin } from 'lucide-react';
+import { GraduationCap, Calendar } from 'lucide-react';
 
 interface EducationProps {
   language: 'en' | 'fr' | 'ar';

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { personalInfo } from '@/lib/data';
-import { Heart, Github, Instagram, ExternalLink } from 'lucide-react';
+import { Github, Instagram, ExternalLink } from 'lucide-react';
 
 interface FooterProps {
   language: 'en' | 'fr' | 'ar';
@@ -151,7 +151,7 @@ const Footer = ({ language }: FooterProps) => {
               viewport={{ once: true }}
               className="flex space-x-4"
             >
-              {socialLinks.map((social, index) => (
+              {socialLinks.map((social) => (
                 <motion.a
                   key={social.name}
                   href={social.href}

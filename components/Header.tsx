@@ -106,7 +106,7 @@ const Header = ({ darkMode, setDarkMode, language, setLanguage }: HeaderProps) =
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {navItems[language].map((item, index) => {
+            {navItems[language].map((item) => {
               const sectionId = sectionMapping[language][item];
               const isActive = activeSection === sectionId;
               
